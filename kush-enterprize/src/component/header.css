@@ -1,0 +1,14 @@
+.header {
+    background-image: url('../../public/images/banner-1571858_1280.jpg');
+    color: #230c0c;
+    background-size: cover;
+    border: none;
+    border-radius: .5rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    position: absolute;
+    height: 8%;
+    margin-right: 0 auto;
+}
