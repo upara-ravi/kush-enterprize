@@ -3,12 +3,35 @@
     color: #230c0c;
     background-size: cover;
     border: none;
-    border-radius: .5rem;   
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 3.5rem;
+    margin-right: 0 auto;
+}
+
+.header-divs {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 99vw;
-    position: absolute;
-    height: 8%;
-    margin-right: 0 auto;
+    padding: .5rem 0 0 0;
+    margin: 0 1rem 0 1rem;
+    flex: 1;
+}
+
+
+
+.header-divs ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header-divs ul li {
+    padding: 0 .5rem 0 .5rem;
+    vertical-align: baseline;
 }
