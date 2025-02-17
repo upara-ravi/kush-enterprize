@@ -2,7 +2,7 @@
     /* background-image: url('../../public/images/banner-1571858_1280.jpg'); */
     color: #230c0c;
     background-color: #fff7f8;
-    color: #3b0b0b;  
+    color: #3b0b0b;
     background-size: cover;
     border: none;
     /* border-radius: .5rem; */
@@ -36,7 +36,80 @@
     list-style: none;
 }
 
-.header-divs ul li {
-    padding: 0 .5rem 0 .5rem;
-    vertical-align: baseline;
+.header-divs li {
+    cursor: pointer;
+    position: relative;
+    /* Make the li element the reference point for the pseudo-element */
+    padding: 0.2rem .2rem;
+    /* Add some padding to the list item */
+}
+
+.header-divs li::after {
+    content: '';
+    /* Add content to the pseudo-element */
+    position: absolute;
+    /* Absolute positioning relative to the li */
+    bottom: 0;
+    /* Position it at the bottom */
+    left: 0;
+    /* Start the line from the left */
+    width: 0;
+    /* Start the line with 0 width */
+    height: 2px;
+    /* Line height */
+    background-color: #3b0b0b;
+    /* Color of the line */
+    transition: width 0.3s ease;
+    /* Smooth transition for the width */
+}
+
+.header-divs li:hover::after {
+    width: 100%;
+    /* When hovered, the line expands to full width */
+}
+
+.third-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transform: translateX(-1rem);
+}
+
+.first-div {
+    display: flex;
+    justify-content: start;
+    transform: translateX(1rem);
+}
+
+.cart {
+    margin-left: 2rem;
+    display: flex;
+    height: 1.6rem;
+    width: 1.6rem;
+    transition: transform 0.7s ease;
+}
+
+.cart:hover {
+    scale: 1.2;
+    transform: scale(105%);    
+}
+
+.login-link {
+    position: relative;
+    padding: 0.2rem 0.2rem;
+}
+
+.login-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3b0b0b;
+    transition: width 0.3s ease;
+}
+
+.login-link:hover::after {
+    width: 100%;
 }

@@ -15,8 +15,8 @@ function App() {
           <img src="/new_images/img_1.png" alt="Second Image" />
         </div>
       </section>
-      
-      
+
+
       <section className='section2'>
         <div className='main-image-container'>
           <div className='image-wrapper'>
@@ -44,8 +44,8 @@ function App() {
           </div>
         </div>
       </section>
-      
-      
+
+
       <section className='section'>
         <div className='col-6 f-s-div'>
           <img src="/new_images/img_6-Photoroom.png" alt="First Image" />
@@ -92,6 +92,24 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <div className='subscribe'>
+          <h2>Always Be Stylish</h2>
+          <p><a href="">Subscribe</a> To Get Update And Special Offers On Time</p>
+        </div>
+        <div className='sub-input'>
+          <div id='div'>
+            <h5>Email</h5>
+            <input placeholder='Enter Your Email' className='get-email' type="text" />
+          </div>
+          <div className='sub-button'>
+            <button type='button'>Subscribe</button>
+          </div>
+        </div>
+        <div className=''></div>
+        <div></div>
       </section>
 
     </>

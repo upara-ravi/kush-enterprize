@@ -152,3 +152,69 @@ html {
     opacity: 1;
     visibility: visible;
 }
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.subscribe h2 {
+    font-size: 2.5rem;
+}
+
+.subscribe p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.subscribe p a {
+    text-decoration: underline;
+}
+
+.sub-input {
+    background-color: #fff7f8;
+    padding: 1.5rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.sub-input input {
+    background-color: #fff7f8;
+    height: 2.5rem;
+    width: 18rem;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #3b0b0b;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.get-email:focus {
+    border-color: transparent;
+    /* background-color: white; */
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-bottom: 1px solid #3b0b0b;
+}
+
+#div h5 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    transform: translateX(3px);
+}
+
+.sub-button {
+    display: flex;
+    align-items: end;
+    transform: translateX(2rem);
+}
+
+.sub-button button {
+    cursor: pointer;
+    font-size: 1.3rem;
+    border: 1px solid transparent;
+    background: transparent;
+}
