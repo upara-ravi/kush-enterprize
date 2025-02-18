@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Ensure you're importing Router
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import App from "./App.jsx";
 import Header from "./component/Header/header.jsx";
@@ -10,13 +11,15 @@ import routes from "./configs/routes.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        {routes.map((route) => (
-          <Route path={route.path} element={route.element} />
-        ))}
-      </Routes>
-    </Router>
+    <ParallaxProvider>
+      <Router>
+        <Header />
+        <Routes>
+          {routes.map((route) => (
+            <Route path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </Router>
+    </ParallaxProvider>
   </StrictMode>
 );
